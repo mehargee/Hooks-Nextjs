@@ -8,15 +8,27 @@ const LoginPage = () => {
 
     const [allEntry, setAllEntry]: any = useState([])
 
+
     const submitForm = (e: any) => {
         e.preventDefault();
-        const newEntry = { email: emai, password: password };
-        setAllEntry([...allEntry, newEntry])
+
+        if (emai && password) { // form validation, khali field b login ho rai thi.
+
+            const newEntry = { id: new Date().getTime.toString, email: emai, password: password }; //Id unique krne k liye hai ta k Map me error na aye
+            setAllEntry([...allEntry, newEntry])
+
+            setEmail("")
+            setPassword("")
+
+        }
+        else {
+            alert("Plz filled all field")
+        }
 
     }
     return (
         <>
-        <h1>Hooks-9</h1>
+            <h1>Hooks-9</h1>
             <div className="login-form" onSubmit={submitForm}>
                 <form action="#">
                     <div className="form-group">
@@ -39,10 +51,12 @@ const LoginPage = () => {
                 </form>
             </div>
             <div className="detailData">
+
                 {allEntry.map((curEle: any) => {
                     return (
-                        <h2>Email:&nbsp;&nbsp; {curEle.email} &nbsp; &nbsp; &nbsp;
-                             password:&nbsp;&nbsp; {curEle.password}</h2>
+                        <h2 key={curEle.id}>Email:&nbsp;&nbsp; {curEle.email} &nbsp; &nbsp; &nbsp;
+                            password:&nbsp;&nbsp; {curEle.password}</h2>
+
                     )
                 })
                 }
