@@ -1,0 +1,38 @@
+
+.name{
+    color: green;
+}
+
+.btn{
+    padding: 20px 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn1{
+    padding: 20px 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin-left: 45%;
+}
+
+.round{
+    color: blue;
+    text-align: center;
+}
+
+.btn1:hover{
+    background-color: black;
+    
+}
+
+.btn:hover{
+    background-color: green;
+    
+}
