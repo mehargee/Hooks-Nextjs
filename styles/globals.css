@@ -144,3 +144,22 @@ button[type="submit"] {
   color: white;
   text-align: center;
 }
+
+.btn1{
+  padding: 20px 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+ }
+
+.btn1:hover{
+  background-color: black;
+  
+}
+
+p{
+  font-size: 28px;
+  text-align: center;
+}

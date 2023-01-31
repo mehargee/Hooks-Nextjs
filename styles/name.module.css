@@ -22,14 +22,16 @@
     margin-left: 45%;
 }
 
-.round{
-    color: blue;
-    text-align: center;
-}
+
 
 .btn1:hover{
     background-color: black;
     
+}
+
+.round{
+    color: blue;
+    text-align: center;
 }
 
 .btn:hover{
