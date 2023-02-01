@@ -6,6 +6,7 @@ import ThreeDot from '@/componets/spreadOperator/ThreeDot'
 import LoginPage from '@/componets/loginForm/LoginPage'
 import UseEffect1 from '@/componets/useEffect/UseEffect1'
 import UseEffect2 from '@/componets/useEffect/UseEffect2'
+import UseEffectApi from '@/componets/useEffect/UseEffectApi'
 import UseArrayState from '@/componets/useArrayHooks/UseArrayState'
 import styles from '@/styles/Home.module.css'
 
@@ -20,7 +21,8 @@ export default function Home() {
      {/* <ThreeDot /> */}
      {/* <LoginPage/> */}
      {/* <UseEffect1 /> */}
-     <UseEffect2 />
+     {/* <UseEffect2 /> */}
+     <UseEffectApi />
       </>
   )
 }
