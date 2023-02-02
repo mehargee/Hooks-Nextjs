@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { FcApproval } from "react-icons/fc"; //react icons
 
 const UseEffectApi = () => {
 
@@ -42,7 +42,7 @@ const UseEffectApi = () => {
             {user.map((curEle: any) => {
                 return (
                     <div key={curEle.id}>
-                        <li>{curEle.login}-{curEle.id}-{curEle.url}-{curEle.type}-
+                        <li>{curEle.login}-{curEle.id}-{curEle.url} <FcApproval /> -{curEle.type}-
                             <button onClick={() => deleteData(curEle.id)}>delete</button>
                         </li>
                     </div>
