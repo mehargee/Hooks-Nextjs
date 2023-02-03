@@ -8,6 +8,7 @@ import UseEffect1 from '@/componets/useEffect/UseEffect1'
 import UseEffect2 from '@/componets/useEffect/UseEffect2'
 import UseEffectApi from '@/componets/useEffect/UseEffectApi'
 import UnControlled from '@/componets/uncontrolled/UnControlled'
+import ReducerHook from '@/componets/useReducer/ReducerHook'
 import UseArrayState from '@/componets/useArrayHooks/UseArrayState'
 import styles from '@/styles/Home.module.css'
 
@@ -23,8 +24,9 @@ export default function Home() {
      {/* <LoginPage/> */}
      {/* <UseEffect1 /> */}
      {/* <UseEffect2 /> */}
-     <UseEffectApi />
+     {/* <UseEffectApi /> */}
      {/* <UnControlled /> */}
+     <ReducerHook />
       </>
   )
 }

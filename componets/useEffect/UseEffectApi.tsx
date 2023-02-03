@@ -29,9 +29,9 @@ const UseEffectApi = () => {
     useEffect(() => {
         getData();
 
-    }, [])
-
-    const clearData = () =>{
+    }, []);
+        
+    const clearData = () =>{ 
         setUser([])
     }
 
